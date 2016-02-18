@@ -9,6 +9,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -18,6 +21,23 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        final EditText loginEmail = (EditText) findViewById(R.id.editText);
+        final EditText loginPassword = (EditText) findViewById(R.id.editText2);
+        Button loginButton = (Button) findViewById(R.id.button);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                String email = loginEmail.getText().toString();
+                String password = loginPassword.getText().toString();
+                String toastText = "Email: " + email + "Password: " + password;
+                Toast toast = Toast.makeText(getApplicationContext(), toastText, Toast.LENGTH_LONG);
+                toast.show();
+            }
+        });
 
     }
 

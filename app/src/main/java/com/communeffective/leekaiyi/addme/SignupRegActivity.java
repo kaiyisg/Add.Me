@@ -25,22 +25,7 @@ public class SignupRegActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Add.Me");
 
-        final EditText loginEmail = (EditText) findViewById(R.id.editText);
-        final EditText loginPassword = (EditText) findViewById(R.id.editText2);
-        Button loginButton = (Button) findViewById(R.id.button);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                String email = loginEmail.getText().toString();
-                String password = loginPassword.getText().toString();
-                String toastText = "Email: " + email + "Password: " + password;
-                Toast toast = Toast.makeText(getApplicationContext(), toastText, Toast.LENGTH_LONG);
-                toast.show();
-            }
-        });
 
 
     }
