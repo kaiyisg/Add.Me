@@ -1,0 +1,15 @@
+<resources>
+
+    <!--
+    String for activity login
+    -->
+    <string name="app_name">Add.Me</string>
+    <string name="action_login">Log In</string>
+    <string name="action_signup">Sign Up</string>
+    <string name="log_in">Log in to Add.Me</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_signup_reg">SignupRegActivity</string>
+
+</resources>
