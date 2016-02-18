@@ -22,8 +22,8 @@ public class LoginActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final EditText loginEmail = (EditText) findViewById(R.id.editText);
-        final EditText loginPassword = (EditText) findViewById(R.id.editText2);
+        final EditText inputEmail = (EditText) findViewById(R.id.editText);
+        final EditText inputPassword = (EditText) findViewById(R.id.editText2);
         Button loginButton = (Button) findViewById(R.id.button);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -31,11 +31,33 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String email = loginEmail.getText().toString();
-                String password = loginPassword.getText().toString();
+                if (  ( !inputEmail.getText().toString().equals("")) && ( !inputPassword.getText().toString().equals("")) )
+                {
+                    //NetAsync(view);
+                }
+                else if ( ( !inputEmail.getText().toString().equals("")) )
+                {
+                    Toast.makeText(getApplicationContext(),
+                            "Password field empty", Toast.LENGTH_SHORT).show();
+                }
+                else if ( ( !inputPassword.getText().toString().equals("")) )
+                {
+                    Toast.makeText(getApplicationContext(),
+                            "Email field empty", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(),
+                            "Email and Password field are empty", Toast.LENGTH_SHORT).show();
+                }
+
+                /*
+                String email = inputEmail.getText().toString();
+                String password = inputPassword.getText().toString();
+
                 String toastText = "Email: " + email + "Password: " + password;
                 Toast toast = Toast.makeText(getApplicationContext(), toastText, Toast.LENGTH_LONG);
-                toast.show();
+                toast.show();*/
             }
         });
 

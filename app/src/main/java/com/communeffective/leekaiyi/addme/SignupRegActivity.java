@@ -25,7 +25,29 @@ public class SignupRegActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Add.Me");
 
+        final EditText regName = (EditText) findViewById(R.id.editText3);
+        final EditText regEmail = (EditText) findViewById(R.id.editText4);
+        final EditText regNumber = (EditText) findViewById(R.id.editText5);
+        final EditText regPassword = (EditText) findViewById(R.id.editText6);
+        final EditText regRepassword = (EditText) findViewById(R.id.editText7);
+        Button regButton = (Button) findViewById(R.id.button2);
 
+        regButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                String name = regName.getText().toString();
+                String email = regEmail.getText().toString();
+                String number = regNumber.getText().toString();
+                String password = regPassword.getText().toString();
+                String repassword = regRepassword.getText().toString();
+
+                //String toastText = "Email: " + email + "Password: " + password;
+                //Toast toast = Toast.makeText(getApplicationContext(), toastText, Toast.LENGTH_LONG);
+                //toast.show();
+            }
+        });
 
 
     }

@@ -12,4 +12,14 @@
     <string name="login">Login</string>
     <string name="title_activity_signup_reg">SignupRegActivity</string>
 
+    <!--
+    Strings for activity signup_reg
+    -->
+    <string name="sign_up_for">Sign up for Add.Me</string>
+    <string name="an_easy_way">An easy way to connect to your friends</string>
+    <string name="name">Name</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="re_password">Re-enter Password</string>
+    <string name="register">Register</string>
+
 </resources>
