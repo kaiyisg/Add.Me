@@ -21,5 +21,16 @@
     <string name="mobile_no">Mobile Number</string>
     <string name="re_password">Re-enter Password</string>
     <string name="register">Register</string>
+    <string name="title_activity_homepage">HomepageActivity</string>
+
+    <!--
+    Strings for activity homepage
+    -->
+    <string name="welcome">Welcome, </string>
+    <string name="pranay">Pranay!</string>
+    <string name="view_stored_contact_cards">View stored Contact Cards</string>
+    <string name="display_qr_code">Display QR Code</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="edit_user_info">Edit User Information</string>
 
 </resources>
