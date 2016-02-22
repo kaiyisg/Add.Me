@@ -11,29 +11,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
-public class DisplaycodeActivity extends AppCompatActivity {
-
-    Button generateQRCode;
+public class DisplayQRPageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_displaycode);
+        setContentView(R.layout.activity_display_qrpage);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Add.Me");
-
-        generateQRCode = (Button)findViewById(R.id.button8);
-
-        generateQRCode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), DisplayQRPageActivity.class);
-                startActivity(intent);
-            }
-        });
 
     }
 

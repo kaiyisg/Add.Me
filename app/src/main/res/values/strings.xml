@@ -48,5 +48,30 @@
     <string name="title_activity_scancode">ScancodeActivity</string>
     <string name="title_activity_editinfo">EditinfoActivity</string>
 
+    <!--
+    Strings for contact card
+    -->
+    <string name="contactcard">Stored Contact Cards</string>
+    <string name="offlinecontactcard">Offline Contact Cards</string>
+    <string name="onlinecontactcard">Downloaded Contact Cards</string>
+
+    <!--
+    Strings for display code
+    -->
+    <string name="choose_infor_share">Choose information to share</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="Email">Email Address</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Instagram">Instagram</string>
+    <string name="Linkedin">Linkedin</string>
+    <string name="offon">Off / On</string>
+    <string name="genqrcode">Generate QR Code</string>
+    <string name="title_activity_display_qrpage">DisplayQRPageActivity</string>
+
+    <!--
+    Strings for display qr code
+    -->
+    <string name="scan_code_for_infor">Scan this code for Contact!</string>
+
 
 </resources>

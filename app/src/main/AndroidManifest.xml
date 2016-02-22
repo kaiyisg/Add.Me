@@ -38,6 +38,10 @@
         <activity
             android:name=".EditinfoActivity"
             android:label="@string/title_activity_editinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayQRPageActivity"
+            android:label="@string/title_activity_display_qrpage"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
