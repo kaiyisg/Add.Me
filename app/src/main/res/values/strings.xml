@@ -79,5 +79,10 @@
     <string name="scan_code_for_infor">Scan this code for Contact!</string>
     <string name="title_activity_signup_linking">SignupLinkingActivity</string>
 
+    <!--
+    Strings for scan qr code
+    -->
+    <string name="scanning_qr_code">Scan QR Code to get contact!</string>
+
 
 </resources>

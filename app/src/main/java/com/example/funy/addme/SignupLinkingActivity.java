@@ -9,8 +9,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class SignupLinkingActivity extends AppCompatActivity {
+
+    Button finishLinkingAccounts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,16 @@ public class SignupLinkingActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Add.Me");
+
+        finishLinkingAccounts = (Button) findViewById(R.id.button12);
+
+        finishLinkingAccounts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), HomepageActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

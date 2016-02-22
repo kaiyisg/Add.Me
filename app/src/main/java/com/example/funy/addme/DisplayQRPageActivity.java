@@ -20,6 +20,7 @@ public class DisplayQRPageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_qrpage);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Add.Me");
 
     }
 
