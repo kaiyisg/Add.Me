@@ -1,36 +1,16 @@
 <resources>
-
-    <!--
-    String for activity login
-    -->
     <string name="app_name">Add.Me</string>
-    <string name="action_login">Log In</string>
-    <string name="action_signup">Sign Up</string>
-    <string name="log_in">Log in to Add.Me</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="title_activity_signup_reg">SignupRegActivity</string>
 
-    <!--
-    Strings for activity signup_reg
-    -->
-    <string name="sign_up_for">Sign up for Add.Me</string>
-    <string name="an_easy_way">An easy way to connect to your friends</string>
-    <string name="name">Name</string>
-    <string name="mobile_no">Mobile Number</string>
-    <string name="re_password">Re-enter Password</string>
-    <string name="register">Register</string>
-    <string name="title_activity_homepage">HomepageActivity</string>
-
-    <!--
-    Strings for activity homepage
-    -->
-    <string name="welcome">Welcome, </string>
-    <string name="pranay">Pranay!</string>
-    <string name="view_stored_contact_cards">View stored Contact Cards</string>
-    <string name="display_qr_code">Display QR Code</string>
-    <string name="scan_qr_code">Scan QR Code</string>
-    <string name="edit_user_info">Edit User Information</string>
-
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 </resources>

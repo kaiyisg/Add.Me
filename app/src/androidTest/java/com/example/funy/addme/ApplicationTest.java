@@ -1,4 +1,4 @@
-package com.communeffective.leekaiyi.addme;
+package com.example.funy.addme;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

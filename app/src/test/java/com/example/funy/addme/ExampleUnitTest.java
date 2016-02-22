@@ -1,4 +1,4 @@
-package com.communeffective.leekaiyi.addme;
+package com.example.funy.addme;
 
 import org.junit.Test;
 
