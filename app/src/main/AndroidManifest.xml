@@ -22,7 +22,23 @@
             android:name=".SignupRegActivity"
             android:label="@string/title_activity_signup_reg"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".HomepageActivity"></activity>
+        <activity android:name=".HomepageActivity" />
+        <activity
+            android:name=".ContactcardActivity"
+            android:label="@string/title_activity_contactcard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplaycodeActivity"
+            android:label="@string/title_activity_displaycode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScancodeActivity"
+            android:label="@string/title_activity_scancode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditinfoActivity"
+            android:label="@string/title_activity_editinfo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
