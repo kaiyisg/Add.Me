@@ -33,5 +33,6 @@
     <string name="display_qr_code">Display QR Code</string>
     <string name="scan_qr_code">Scan QR Code</string>
     <string name="edit_user_info">Edit User Information</string>
+    <string name="logout">Logout</string>
 
 </resources>

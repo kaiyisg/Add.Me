@@ -37,8 +37,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if ((!inputEmail.getText().toString().equals("")) && (!inputPassword.getText().toString().equals(""))) {
-                    Toast.makeText(getApplicationContext(),
-                            "All fields filled", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(v.getContext(), HomepageActivity.class);
+                    startActivity(intent);
 
                 } else if ((!inputEmail.getText().toString().equals(""))) {
                     Toast.makeText(getApplicationContext(),
