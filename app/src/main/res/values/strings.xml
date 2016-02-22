@@ -13,6 +13,7 @@
     <string name="login">Login</string>
     <string name="title_activity_signup_reg">SignupRegActivity</string>
 
+
     <!--
     Strings for activity signup_reg
     -->
@@ -23,6 +24,10 @@
     <string name="re_password">Re-enter Password</string>
     <string name="register">Register</string>
     <string name="title_activity_homepage">HomepageActivity</string>
+    <string name="link_profiles">Link Profiles</string>
+    <string name="logon_to_connect">Logon to connect your profiles to Add.Me</string>
+    <string name="link_account">Link Account</string>
+    <string name="finish">Finish linking accounts</string>
 
     <!--
     Strings for activity homepage
@@ -72,6 +77,7 @@
     Strings for display qr code
     -->
     <string name="scan_code_for_infor">Scan this code for Contact!</string>
+    <string name="title_activity_signup_linking">SignupLinkingActivity</string>
 
 
 </resources>

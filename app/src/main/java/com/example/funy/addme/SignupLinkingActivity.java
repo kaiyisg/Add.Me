@@ -9,45 +9,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
-public class SignupRegActivity extends AppCompatActivity {
+public class SignupLinkingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup_reg);
+        setContentView(R.layout.activity_signup_linking);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Add.Me");
-
-        final EditText regName = (EditText) findViewById(R.id.editText3);
-        final EditText regEmail = (EditText) findViewById(R.id.editText4);
-        final EditText regNumber = (EditText) findViewById(R.id.editText5);
-        final EditText regPassword = (EditText) findViewById(R.id.editText6);
-        final EditText regRepassword = (EditText) findViewById(R.id.editText7);
-        Button regButton = (Button) findViewById(R.id.button2);
-
-        regButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                if ((!regName.getText().toString().equals("")) && (!regEmail.getText().toString().equals(""))
-                        && (!regNumber.getText().toString().equals("")) && (!regPassword.getText().toString().equals(""))
-                        && (!regRepassword.getText().toString().equals(""))) {
-                    Intent intent = new Intent(v.getContext(), SignupLinkingActivity.class);
-                    startActivity(intent);
-
-                }else{
-                    Toast.makeText(getApplicationContext(),
-                            "Please fill up the empty fields!", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
 
     }
 
