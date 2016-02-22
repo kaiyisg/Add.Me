@@ -6,53 +6,47 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
-public class LoginActivity extends AppCompatActivity {
-
-    EditText inputEmail;
-    EditText inputPassword;
-    Button loginButton;
-    Toolbar toolbar;
+public class SignupRegActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_signup_reg);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Add.Me");
 
-        inputEmail = (EditText) findViewById(R.id.editText);
-        inputPassword = (EditText) findViewById(R.id.editText2);
-        loginButton = (Button) findViewById(R.id.button);
+        final EditText regName = (EditText) findViewById(R.id.editText3);
+        final EditText regEmail = (EditText) findViewById(R.id.editText4);
+        final EditText regNumber = (EditText) findViewById(R.id.editText5);
+        final EditText regPassword = (EditText) findViewById(R.id.editText6);
+        final EditText regRepassword = (EditText) findViewById(R.id.editText7);
+        Button regButton = (Button) findViewById(R.id.button2);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        regButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                if ((!inputEmail.getText().toString().equals("")) && (!inputPassword.getText().toString().equals(""))) {
-                    Toast.makeText(getApplicationContext(),
-                            "All fields filled", Toast.LENGTH_SHORT).show();
+                String name = regName.getText().toString();
+                String email = regEmail.getText().toString();
+                String number = regNumber.getText().toString();
+                String password = regPassword.getText().toString();
+                String repassword = regRepassword.getText().toString();
 
-                } else if ((!inputEmail.getText().toString().equals(""))) {
-                    Toast.makeText(getApplicationContext(),
-                            "Password field empty", Toast.LENGTH_SHORT).show();
-                } else if ((!inputPassword.getText().toString().equals(""))) {
-                    Toast.makeText(getApplicationContext(),
-                            "Email field empty", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(),
-                            "Email and Password field are empty", Toast.LENGTH_SHORT).show();
-                }
-
+                //String toastText = "Email: " + email + "Password: " + password;
+                //Toast toast = Toast.makeText(getApplicationContext(), toastText, Toast.LENGTH_LONG);
+                //toast.show();
             }
         });
+
+
     }
 
     @Override
@@ -84,4 +78,5 @@ public class LoginActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

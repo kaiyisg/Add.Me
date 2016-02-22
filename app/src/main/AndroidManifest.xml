@@ -18,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignupRegActivity"
+            android:label="@string/title_activity_signup_reg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HomepageActivity"></activity>
     </application>
 
 </manifest>
